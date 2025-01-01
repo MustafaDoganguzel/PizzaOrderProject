@@ -5,7 +5,7 @@ export default function PizzaName() {
         <div className='pizzaDetails'>
             <h2>Position Absolute Acı Pizza</h2>
             <div className='rating'>
-                <p>85.50₺</p>
+                <h2>85.50₺</h2>
                 <p>4.9</p>
                 <p>(200)</p>
             </div>

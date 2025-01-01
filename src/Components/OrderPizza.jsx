@@ -10,7 +10,7 @@ import NumberOfOrder from './NumberOfOrder'
 
 export default function OrderPizza() {
     return (
-        <div>
+        <div className='OrderPizza'>
             <Header1 />
             <Nav />
             <PizzaName />

@@ -33,18 +33,22 @@ export default function Additional() {
 
     return (
         <div className='additional'>
-            <h4>Ek Malzemeler</h4>
-            <p>En fazla 10 malzeme seçebilirsiniz. 5₺</p>
-            {ekMalzeme.map((e) => {
-                return <div className='malzemeler' key={e}>
-                    <input type="checkbox"
-                        id={e}
-                        onChange={handleCheckboxChange}
-                        checked={selectedItems.includes(e)} />
-                    <label htmlFor={e}>{e}</label>
-                </div>
+            <div className='aciklama'>
+                <h4>Ek Malzemeler</h4>
+                <p>En fazla 10 malzeme seçebilirsiniz. 5₺</p>
+            </div>
+            <div className='ekMalzemeler'>
+                {ekMalzeme.map((e) => {
+                    return <div key={e}>
+                        <input type="checkbox"
+                            id={e}
+                            onChange={handleCheckboxChange}
+                            checked={selectedItems.includes(e)} />
+                        <label htmlFor={e}>{e}</label>
+                    </div>
 
-            })}
+                })}
+            </div>
         </div>
     )
 }

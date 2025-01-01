@@ -15,16 +15,14 @@ export default function PizzaSize() {
         setDoughThickness(event.target.value);
     }
     return (
-        <div>
+        <div className='pizzaSize'>
 
 
             <div className='Size'>
                 <h4>Boyut Seç <span className='zorunlu'>*</span></h4>
-                <h4>Hamur seç <span className='zorunlu'>*</span></h4>
-            </div>
-            <div>
 
-                <div>
+
+                <div className='radio'>
                     <label>
                         <input
                             type="radio"
@@ -34,8 +32,6 @@ export default function PizzaSize() {
                         />
                         Small
                     </label>
-                </div>
-                <div>
                     <label>
                         <input
                             type="radio"
@@ -45,8 +41,6 @@ export default function PizzaSize() {
                         />
                         Medium
                     </label>
-                </div>
-                <div>
                     <label>
                         <input
                             type="radio"
@@ -57,6 +51,12 @@ export default function PizzaSize() {
                         Large
                     </label>
                 </div>
+
+
+            </div>
+
+            <div className='hamurKalinlik'>
+                <h4>Hamur seç <span className='zorunlu'>*</span></h4>
                 <select value={doughThickness} onChange={handleChange}>
                     <option value="" disabled>
                         Hamur Kalınlığı
@@ -64,9 +64,9 @@ export default function PizzaSize() {
                     <option value="ince">İnce Hamur</option>
                     <option value="kalin">Kalın Hamur</option>
                 </select>
-
-
             </div>
+
+
         </div>
 
     )

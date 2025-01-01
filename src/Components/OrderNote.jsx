@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function OrderNote() {
+
     return (
-        <div>
-            <h4>Sipariș Notu</h4>
-            <textarea placeholder='Siparisinize eklemek istedigin bir not var mi?'></textarea>
-            <button disabled>Not Ekle</button>
+        <div className='orderNote'>
+            <div>
+                <h4>Sipariș Notu</h4>
+                <textarea placeholder='Siparisinize eklemek istedigin bir not var mi?'></textarea>
+            </div>
+            <button >Not Ekle</button>
             <hr />
         </div>
     )

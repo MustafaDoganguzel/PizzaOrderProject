@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom';
 
 export default function NumberOfOrder() {
     const [count, setCount] = useState(1);
+    const history = useHistory();
 
     function arttir() {
         setCount(count + 1);
@@ -12,6 +14,9 @@ export default function NumberOfOrder() {
         }
         setCount(count - 1);
     }
+    const handleButtonClick = () => {
+        history.push('/Success');
+    };
 
 
     return (
@@ -29,9 +34,9 @@ export default function NumberOfOrder() {
 
                 </div>
 
-
+                <button className='siparisVer' onClick={handleButtonClick}>Siparis Ver</button>
             </div>
-            <button className='siparisVer'>Siparis Ver</button>
+
 
 
         </>
