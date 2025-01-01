@@ -9,10 +9,11 @@ export default function NumberOfOrder() {
         setCount(count + 1);
     }
     function azalt() {
+        setCount(count - 1);
         if (count >= 0) {
             alert('Siparis sayiniz negatif olamaz!!')
         }
-        setCount(count - 1);
+
     }
     const handleButtonClick = () => {
         history.push('/Success');
