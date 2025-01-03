@@ -10,7 +10,10 @@ export default function Home() {
     };
     return (
         <div className='home'>
+
             <img src="./images/iteration-1-images/home-banner.png" alt="home" />
+            <h1 className='logo'>Teknolojik Yemekler</h1>
+            <h1 className='banner'>KOD ACIKTIRIR, PIZZA DOYURUR</h1>
             <button className='aciktim' onClick={handleButtonClick}>Aciktim</button>
 
         </div>

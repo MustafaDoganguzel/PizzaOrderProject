@@ -32,13 +32,13 @@ export default function NumberOfOrder() {
                     <h4>Siparis Toplami</h4>
                     <p>Secimler</p>
                     <p><span className='total'>Toplam</span></p>
-
+                    <button className='siparisVer' onClick={handleButtonClick}>Siparis Ver</button>
                 </div>
 
-                <button className='siparisVer' onClick={handleButtonClick}>Siparis Ver</button>
+
             </div>
 
-
+            <br /><br /><br />
 
         </>
     )

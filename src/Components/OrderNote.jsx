@@ -7,9 +7,10 @@ export default function OrderNote() {
             <div>
                 <h4>Sipariș Notu</h4>
                 <textarea className='not' placeholder='Siparisinize eklemek istedigin bir not var mi?'></textarea>
+                <hr />
             </div>
-            <button >Not Ekle</button>
             <hr />
+            <br />
         </div>
     )
 }
